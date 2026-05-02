@@ -1,20 +1,40 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# TeamSync Tracker
 
-# Run and deploy your AI Studio app
+A lightweight team progress dashboard — an MVP alternative to Jira for small teams that need coordination without the overhead.
 
-This contains everything you need to run your app locally.
+The insight behind this: most teams need 80% of what Jira does, at 10% of its complexity. This is that 10%.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1xsrCv5l2HjijIH0burJDxiE8AZW-SCSZ
+We use the following tech stack:
+- Google Gemini for AI-powered task suggestions and smart summaries
+- TypeScript + React for the interface
+- Tailwind CSS for styling
+- localStorage for lightweight persistence
 
-## Run Locally
+## 🚀 Features
 
-**Prerequisites:**  Node.js
+* **Kanban Board:** To Do / In Progress / Done columns with drag-and-drop task movement
+* **Ownership:** Assign tasks to team members so responsibility is always clear
+* **Blocker Flagging:** Mark tasks as blocked and surface them prominently in the view
+* **Sprint Mode:** Organize work into time-boxed sprints with a clear goal
+* **Progress Dashboard:** At-a-glance view of team velocity and completion rate
+* **Zero Setup:** No database, no accounts — runs in the browser immediately
 
+## Setup
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+git clone https://github.com/yatinbhalla/TeamSync-Tracker.git
+cd TeamSync-Tracker
+npm install
+echo "GEMINI_API_KEY=your_key_here" > .env.local
+npm run dev
+```
+
+Get a free Gemini API key at [aistudio.google.com](https://aistudio.google.com/)
+
+## Author
+
+Yatin Bhalla
+<br>
+🛍️ PM & AI builder | Managing retail businesses | PG Product Management @ BITS School of Management
+<br>
+🔗 [Linkedin](https://linkedin.com/in/yatin-bhalla-834632238)
